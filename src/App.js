@@ -6,10 +6,13 @@ import Header from './components/Header/Header'
 import MainPage from './pages/Main/Main.page'
 import ContactPage from './pages/Contact/Contact.page'
 import AboutPage from './pages/About/About.page'
+import { theme } from './shared/theme'
+import { GlobalStyle } from './shared/Global'
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
+            <GlobalStyle />
             <div className='App'>
                 <div>my app</div>
             </div>
